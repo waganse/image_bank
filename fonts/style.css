@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?w30bcr');
-  src:  url('fonts/icomoon.eot?w30bcr#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?w30bcr') format('truetype'),
-    url('fonts/icomoon.woff?w30bcr') format('woff'),
-    url('fonts/icomoon.svg?w30bcr#icomoon') format('svg');
+  src:  url('https://cdn.rawgit.com/waganse/src_bank/tree/master/fonts/fonts/icomoon.eot?w30bcr');
+  src:  url('https://cdn.rawgit.com/waganse/src_bank/tree/master/fonts/fonts/icomoon.eot?w30bcr#iefix') format('embedded-opentype'),
+    url('https://cdn.rawgit.com/waganse/src_bank/tree/master/fonts/fonts/icomoon.ttf?w30bcr') format('truetype'),
+    url('https://cdn.rawgit.com/waganse/src_bank/tree/master/fonts/fonts/icomoon.woff?w30bcr') format('woff'),
+    url('https://cdn.rawgit.com/waganse/src_bank/tree/master/fonts/fonts/icomoon.svg?w30bcr#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
