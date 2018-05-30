@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link href="/c3-0.4.23/htdocs/css/c3.css" rel="stylesheet" type="text/css">
+    <link href="//cdn.rawgit.com/waganse/src_bank/8957f425/js/c3/c3.min.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div id="chart"></div>
@@ -8,13 +8,13 @@
     <div id="chart2"></div>
     <div id="chart3"></div>
 
-    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="/c3-0.4.23/htdocs/js/c3.min.js"></script>
+    <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="//cdn.rawgit.com/waganse/src_bank/8957f425/js/c3/c3.min.js"></script>
     <script>
       var chart = c3.generate({
         data: {
           columns: [
-            [ 'data', 91.4 ]
+            [ 'data', 59.4 ]
           ],
           type: 'gauge',
           onmouseover: function (d, i) { console.log("onmouseover", d, i, this); },
@@ -46,47 +46,50 @@
         }
       });
 
-      var chart1 = c3.generate({
-          bindto: '#chart1',
-          data: {
-              columns: [
-                  ['data', 75.0]
-              ],
-              type: 'gauge',
-          },
-          gauge: {
-              min: 50,
-              max: 100
-          }
-      });
+      // var chart1 = c3.generate({
+      //     bindto: '#chart1',
+      //     size: {
+      //       width: '1000'
+      //     },
+      //     data: {
+      //         columns: [
+      //             ['data', 75.0]
+      //         ],
+      //         type: 'gauge',
+      //     },
+      //     gauge: {
+      //         min: 0,
+      //         max: 100
+      //     }
+      // });
 
-      var chart2 = c3.generate({
-          bindto: '#chart2',
-          data: {
-              columns: [
-                  ['data', 0.0]
-              ],
-              type: 'gauge',
-          },
-          gauge: {
-              min: -100,
-              max: 100
-          }
-      });
+      // var chart2 = c3.generate({
+      //     bindto: '#chart2',
+      //     data: {
+      //         columns: [
+      //             ['data', 0.0]
+      //         ],
+      //         type: 'gauge',
+      //     },
+      //     gauge: {
+      //         min: -100,
+      //         max: 100
+      //     }
+      // });
 
-      var chart3 = c3.generate({
-          bindto: '#chart3',
-          data: {
-              columns: [
-                  ['data', -75.0]
-              ],
-              type: 'gauge',
-          },
-          gauge: {
-              min: -100,
-              max: -50
-          }
-      });
+      // var chart3 = c3.generate({
+      //     bindto: '#chart3',
+      //     data: {
+      //         columns: [
+      //             ['data', -75.0]
+      //         ],
+      //         type: 'gauge',
+      //     },
+      //     gauge: {
+      //         min: -100,
+      //         max: -50
+      //     }
+      // });
 
       var cycleDemo = function () {
 
@@ -95,85 +98,6 @@
             .transition()
             .style('fill', '#333');
         }, 1000);
-
-        setTimeout(function () {
-            chart.load({
-              columns: [[ 'data', 10 ]]
-            });
-        }, 2000);
-
-        setTimeout(function () {
-            chart.load({
-              columns: [[ 'data', 50 ]]
-            });
-        }, 3000);
-
-        setTimeout(function () {
-            chart.load({
-              columns: [[ 'data', 91.4 ]]
-            });
-        }, 4000);
-
-        setTimeout(function () {
-          d3.select('#chart .c3-chart-arcs-background')
-            .transition()
-            .style('fill', '#e0e0e0');
-        }, 5000);
-
-        setTimeout(function () {
-            chart.load({
-              columns: [[ 'data', 0 ]]
-            });
-        }, 6000);
-
-        setTimeout(function () {
-            chart.load({
-              columns: [[ 'data', 50 ]]
-            });
-        }, 7000);
-
-        setTimeout(function () {
-            chart.load({
-              columns: [[ 'data', 91.4 ]]
-            });
-        }, 8000);
-
-        setTimeout(function () {
-            chart.load({
-              columns: [[ 'data', 0 ]]
-            });
-        }, 9000);
-
-        setTimeout(function () {
-            chart.load({
-              columns: [[ 'data', 50 ]]
-            });
-        }, 10000);
-
-        setTimeout(function () {
-            chart.load({
-              columns: [[ 'data', 91.4 ]]
-            });
-        }, 11000);
-
-        setTimeout(function () {
-            chart.load({
-              columns: [[ 'data', 0 ]]
-            });
-        }, 12000);
-
-        setTimeout(function () {
-            chart.load({
-              columns: [[ 'data', 50 ]]
-            });
-        }, 13000);
-
-        setTimeout(function () {
-            chart.load({
-              columns: [[ 'data', 91.4 ]]
-            });
-        }, 14000);
-
       }
 
       cycleDemo();
